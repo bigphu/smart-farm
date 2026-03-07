@@ -1,0 +1,10 @@
+.pio
+.vscode/
+build/
+.venv/
+__pycache__/
+*.pyc
+.env
+system-monitor.spec
+dist/
+system-monitor/
