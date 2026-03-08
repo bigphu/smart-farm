@@ -56,6 +56,8 @@ void loop() {
       doc["humid"] = serialized(String(d.humidity, 1));
       doc["soil"]  = d.soilMoisture;
       doc["light"] = d.lightLevel;
+      doc["rawSoil"] = d.rawSoil;
+      doc["rawLight"] = d.rawLight;
     }
     doc["pump"]   = relayIsOn();
     // doc["mqtt"]   = mqttIsConnected();

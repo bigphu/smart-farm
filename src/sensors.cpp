@@ -15,6 +15,8 @@ SensorData sensorsRead() {
   
   if (isnan(data.temperature) || isnan(data.humidity)) {
     data.isValid = false;
+  } else {
+    data.isValid = true;
   }
 
   // TODO: Convert LDR reading from raw Ohm to Lux

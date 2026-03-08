@@ -11,10 +11,10 @@
 
 
 // --------------------- PIN DEFINITIONS ---------------------
-#define PIN_DHT            4      // GPIO4 - Temperatur and humidity sensor
+#define PIN_DHT            25     // GPIO4 - Temperatur and humidity sensor
 #define DHT_TYPE           DHT22 
 #define PIN_SOIL_MOISTURE  34     // GPIO34 - Soil moisture sensor (ADC, input-only)
-#define PIN_LDR            35     // GPIO35 - Photoresistor (ADC, input-only)
+#define PIN_LDR            32     // GPIO35 - Photoresistor (ADC, input-only)
 #define PIN_RELAY          26     // GPIO26 - Relay IN (LOW = activate pump)
 
 
@@ -22,7 +22,7 @@
 #define SOIL_DRY_VALUE  4095  // Raw ADC when soil is dry
 #define SOIL_WET_VALUE  0     // Raw ADC when soil is flooded
 
-#define LDR_DIM_VALUE     1023  // Raw ADC when no light is detected
+#define LDR_DIM_VALUE     4095  // Raw ADC when no light is detected
 #define LDR_BRIGHT_VALUE  0     // Raw ADC when light source is next to sensor
 
 
