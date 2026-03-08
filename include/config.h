@@ -15,7 +15,7 @@
 #define DHT_TYPE           DHT22 
 #define PIN_SOIL_MOISTURE  34     // GPIO34 - Soil moisture sensor (ADC, input-only)
 #define PIN_LDR            32     // GPIO35 - Photoresistor (ADC, input-only)
-#define PIN_RELAY          26     // GPIO26 - Relay IN (LOW = activate pump)
+#define PIN_RELAY          21     // GPIO26 - Relay IN (LOW = activate pump)
 
 
 // --------------------- ADC ---------------------
