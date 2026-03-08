@@ -1,6 +1,6 @@
 # 🌱 Smart Farm IoT System (Telemetry Architecture)
 
-⚠️ **Current Status:** Local Serial Telemetry and the Python PC Dashboard; and The Internet/Cloud integration (WiFi provisioning and Adafruit IO MQTT syncing) is currently under active development and is not yet ready for production.
+⚠️ **Current Status:** The Internet/Cloud integration (WiFi provisioning and Adafruit IO MQTT syncing) is currently under active development and is not yet ready for production.
 
 ---
 

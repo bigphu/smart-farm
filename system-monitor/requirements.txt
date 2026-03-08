@@ -1,0 +1,4 @@
+pyserial
+rich
+dotenv
+keyboard
