@@ -34,13 +34,13 @@
 #define WIFI_CONFIG_TIMEOUT  120           
 
 // --------------------- ADAFRUIT IO (MQTT) ---------------------
-// #define AIO_SERVER      "io.adafruit.com"
-// #define AIO_SERVERPORT  1883               
-// #define AIO_USERNAME    SECRET_AIO_USER 
-// #define AIO_KEY         SECRET_AIO_KEY  // TODO: Put this in an .env file for security 
+#define AIO_SERVER      "io.adafruit.com"
+#define AIO_SERVERPORT  1883               
+#define AIO_USERNAME    SECRET_AIO_USER 
+#define AIO_KEY         SECRET_AIO_KEY  // TODO: Put this in an .env file for security 
 
-// #define TOPIC_SENSORS   AIO_USERNAME "/feeds/farm.sensors"
-// #define TOPIC_COMMANDS  AIO_USERNAME "/feeds/farm.commands"
+#define TOPIC_SENSORS   AIO_USERNAME "/feeds/farm.sensors"
+#define TOPIC_COMMANDS  AIO_USERNAME "/feeds/farm.commands"
 
 // --------------------- TIMING ---------------------
 #define MQTT_INTERVAL_MS     10000UL  // 10 seconds to prevent Adafruit IO ban

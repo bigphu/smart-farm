@@ -18,6 +18,7 @@ SensorData sensorsRead() {
   } else {
     data.isValid = true;
   }
+  data.isValid = true;
 
   // TODO: Convert LDR reading from raw Ohm to Lux
   

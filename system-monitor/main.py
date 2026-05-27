@@ -101,7 +101,7 @@ def generate_ui(data):
   # Group them together with the Rule
   right_group = Group(
     Align.center(Text.from_markup(right_top, justify="center")),
-    Rule(characters="", style="dim white"),
+    Rule(characters="─", style="dim white"),
     Align.center(Text.from_markup(right_bottom, justify="center"))
   )
   right_panel = Panel(right_group, title="[green]Irrigation Stats[/]", border_style="green")

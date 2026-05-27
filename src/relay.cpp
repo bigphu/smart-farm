@@ -10,12 +10,12 @@ void relayInit() {
 }
 
 void relayOn() {
-  digitalWrite(PIN_RELAY, LOW); 
+  digitalWrite(PIN_RELAY, HIGH); 
   _relayOn = true;
 }
 
 void relayOff() {
-  digitalWrite(PIN_RELAY, HIGH);
+  digitalWrite(PIN_RELAY, LOW);
   _relayOn = false;
 }
 

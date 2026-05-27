@@ -18,8 +18,8 @@ void setup() {
   
   relayInit();
   sensorsInit();
-  // wifiProvision(deviceID);
-  // mqttInit(deviceID);
+  wifiProvision(deviceID);
+  mqttInit(deviceID);
 }
 
 // Listen for incoming commands from the PC Python script
@@ -38,7 +38,7 @@ void handlePCCommands() {
 }
 
 void loop() {
-  // mqttLoop();
+  mqttLoop();
   handlePCCommands();
 
   unsigned long now = millis();
@@ -60,17 +60,17 @@ void loop() {
       doc["rawLight"] = d.rawLight;
     }
     doc["pump"]   = relayIsOn();
-    // doc["mqtt"]   = mqttIsConnected();
-    // doc["rssi"]   = WiFi.RSSI();
+    doc["mqtt"]   = mqttIsConnected();
+    doc["rssi"]   = WiFi.RSSI();
     doc["uptime"] = now / 1000;
 
     serializeJson(doc, Serial);
     Serial.println(); // Signal end of JSON object to PC
 
     // 2. Publish to Adafruit IO every 10 seconds
-    // if (now - lastMqttMs >= MQTT_INTERVAL_MS) {
-    //   lastMqttMs = now;
-    //   if (d.isValid) mqttPublishSensors(d);
-    // }
+    if (now - lastMqttMs >= MQTT_INTERVAL_MS) {
+      lastMqttMs = now;
+      if (d.isValid) mqttPublishSensors(d);
+    }
   }
 }
